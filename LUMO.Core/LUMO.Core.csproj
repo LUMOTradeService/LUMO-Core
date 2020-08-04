@@ -2,7 +2,24 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <SignAssembly>false</SignAssembly>
+    <Version>0.0.1</Version>
+    <RepositoryUrl>https://github.com/LUMOTradeService/LUMO-Core</RepositoryUrl>
+    <Company>LUMO Trade Service</Company>
+    <Authors>LUMO_L0ki</Authors>
+    <Product>LUMO Core</Product>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageProjectUrl>https://github.com/LUMOTradeService/LUMO-Core</PackageProjectUrl>
+    <PackageLicenseFile></PackageLicenseFile>
+    <PackageId>LUMO-Core</PackageId>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="license.txt" />
+    <None Remove="license.txt" />
+  </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Helpers\" />
