@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30320.27
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LUMO.Core", "LUMO.Core\LUMO.Core.csproj", "{A5851AC7-2834-4193-BC3C-B31A6C264D9E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A5851AC7-2834-4193-BC3C-B31A6C264D9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5851AC7-2834-4193-BC3C-B31A6C264D9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5851AC7-2834-4193-BC3C-B31A6C264D9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5851AC7-2834-4193-BC3C-B31A6C264D9E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E78D543F-4C6E-4D18-AC01-FC854AAAF947}
+	EndGlobalSection
+EndGlobal
