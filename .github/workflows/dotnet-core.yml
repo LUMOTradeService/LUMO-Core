@@ -30,3 +30,4 @@ jobs:
        PROJECT_FILE_PATH: LUMO.Core/LUMO.Core.csproj
        PACKAGE_NAME: LUMO.Core
        NUGET_KEY: ${{secrets.NUGET_API_KEY}}
+       run: dotnet nuget push -s https://www.nuget.org/api/v2/package -k $NUGET_API_KEY ./packages/*.nupkg
