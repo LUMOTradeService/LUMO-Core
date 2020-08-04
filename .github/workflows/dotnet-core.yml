@@ -23,9 +23,10 @@ jobs:
       run: dotnet build --configuration Release --no-restore
     - name: Test
       run: dotnet test --no-restore --verbosity normal
-    - name: Publish
+    - name: Publish NuGet
       id: publish_nuget
       uses: brandedoutcast/publish-nuget@v2.5.5
       with:
        PROJECT_FILE_PATH: LUMO.Core/LUMO.Core.csproj
+       PACKAGE_NAME: LUMO.Core
        NUGET_KEY: ${{secrets.NUGET_API_KEY}}
