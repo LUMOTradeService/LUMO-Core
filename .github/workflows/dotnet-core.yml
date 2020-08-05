@@ -11,24 +11,22 @@ jobs:
 
     runs-on: ubuntu-latest
 
-    name: Update NuGet package
     steps:
-
-      - name: Checkout repository
-        uses: actions/checkout@v1
-
-      - name: Setup .NET Core @ Latest
-        uses: actions/setup-dotnet@v1
-        with:
-          source-url: https://nuget.pkg.github.com/<organization>/index.json
-        env:
-          NUGET_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}        
-
-      - name: Build solution and generate NuGet package
-        run: |  
-          cd <project>
-          dotnet pack -c Release -o out  
-
-      - name: Push generated package to GitHub registry
-        run: dotnet nuget push ./<project>/out/*.nupkg --skip-duplicate --no-symbols
-    
+    - uses: actions/checkout@v2
+    - name: Setup .NET Core
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 3.1.301
+    - name: Install dependencies
+      run: dotnet restore
+    - name: Build
+      run: dotnet build --configuration Release --no-restore
+    - name: Test
+      run: dotnet test --no-restore --verbosity normal
+    - name: Publish NuGet
+      id: publish_nuget
+      uses: brandedoutcast/publish-nuget@v2.5.5
+      with:
+       PROJECT_FILE_PATH: LUMO.Core/LUMO.Core.csproj
+       PACKAGE_NAME: LUMO.Core
+       NUGET_KEY: ${{secrets.NUGET_API_KEY}}
