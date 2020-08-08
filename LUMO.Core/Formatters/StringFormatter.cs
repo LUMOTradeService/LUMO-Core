@@ -5,6 +5,9 @@ using System.Text;
 
 namespace LUMO.Core.Formatters
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public static class StringFormatter
     {
         /// <summary>

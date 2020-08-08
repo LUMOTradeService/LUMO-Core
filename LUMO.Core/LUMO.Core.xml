@@ -1,0 +1,194 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>LUMO.Core</name>
+    </assembly>
+    <members>
+        <member name="T:LUMO.Core.Calculator">
+            <summary>
+            Realy, realy, realy simple calculator
+            </summary>
+        </member>
+        <member name="M:LUMO.Core.Calculator.Addition(System.Double,System.Double)">
+            <summary>
+            Add two numbers.
+            </summary>
+            <param name="a"></param>
+            <param name="b"></param>
+            <returns>Result</returns>
+        </member>
+        <member name="M:LUMO.Core.Calculator.Subrtaction(System.Double,System.Double)">
+            <summary>
+            Subtract two numbers.
+            </summary>
+            <param name="a"></param>
+            <param name="b"></param>
+            <returns>Result</returns>
+        </member>
+        <member name="M:LUMO.Core.Calculator.Division(System.Double,System.Double)">
+            <summary>
+            Divide two numbers.
+            </summary>
+            <param name="a"></param>
+            <param name="b"></param>
+            <returns>Result</returns>
+        </member>
+        <member name="M:LUMO.Core.Calculator.Multiplication(System.Double,System.Double)">
+            <summary>
+            Multiply two numbers.
+            </summary>
+            <param name="a"></param>
+            <param name="b"></param>
+            <returns>Result</returns>
+        </member>
+        <member name="T:LUMO.Core.FileManager">
+            <summary>
+            At this it just returns list of files in folder.
+            But I will add Save/Load/Delete... some day.
+            </summary>
+        </member>
+        <member name="M:LUMO.Core.FileManager.GetFiles(System.String)">
+            <summary>
+            Get all files in folder.
+            </summary>
+            <param name="folder">folder path.</param>
+            <returns>List of files.</returns>
+        </member>
+        <member name="M:LUMO.Core.FileManager.GetFiles(System.String,System.String[],System.Boolean)">
+            <summary>
+            Get all files in folder that ends with suffix.
+            </summary>
+            <param name="folder"></param>
+            <param name="filters">(Examples: exe, dll, png, etx...)</param>
+            <param name="isRecursive"></param>
+            <returns>List of filtered files.</returns>
+        </member>
+        <member name="M:LUMO.Core.FileManager.GetFiles(System.String,System.String,System.String[],System.Boolean)">
+            <summary>
+            Get All Files in Folder that begins with [fileNameBegin] string.
+            </summary>
+            <param name="folder"></param>
+            <param name="fileNameBegin"></param>
+            <param name="filters">(Examples: exe, dll, png, etx...)</param>
+            <param name="isRecursive"></param>
+            <returns>List of filtered files.</returns>
+        </member>
+        <member name="T:LUMO.Core.Formatters.StringFormatter">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:LUMO.Core.Formatters.StringFormatter.FirstCharToUpper(System.String)">
+            <summary>
+            Format string with first character in uppercase
+            </summary>
+            <param name="value"></param>
+            <returns>String with first character in uppercase</returns>
+        </member>
+        <member name="T:LUMO.Core.Generate">
+            <summary>
+            Generates random things... (int, string, etc.) 
+            </summary>
+        </member>
+        <member name="F:LUMO.Core.Generate.random">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:LUMO.Core.Generate.RandomInt">
+            <summary>
+            Get random int.
+            </summary>
+            <returns>Integer</returns>
+        </member>
+        <member name="M:LUMO.Core.Generate.RandomInt(System.Int32)">
+            <summary>
+            Get random int from 0 to max.
+            </summary>
+            <param name="max"></param>
+            <returns>Interger between 0 to max</returns>
+        </member>
+        <member name="M:LUMO.Core.Generate.RandomInt(System.Int32,System.Int32)">
+            <summary>
+            Get random int from min to max.
+            </summary>
+            <param name="min"></param>
+            <param name="max"></param>
+            <returns>Interger between min to max</returns>
+        </member>
+        <member name="M:LUMO.Core.Generate.RandomDouble">
+            <summary>
+            Get random double from 0.0 to 1.0.
+            </summary>
+            <returns>Double between 0.0 to 1.0</returns>
+        </member>
+        <member name="M:LUMO.Core.Generate.RandomDouble(System.Int32)">
+            <summary>
+            Get random double from 0.0 to 1.0 time (multiplier).
+            </summary>
+            <param name="multiplier"></param>
+            <returns>Double between 0.0 to 1.0 (multiplier)</returns>
+        </member>
+        <member name="T:LUMO.Core.Helpers.JsonHelper">
+            <summary>
+            Serialize/Deserialize 
+            </summary>
+        </member>
+        <member name="M:LUMO.Core.Helpers.JsonHelper.ToObjectAsync``1(System.String)">
+            <summary>
+            Json to object.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="value"></param>
+            <returns>Object</returns>
+        </member>
+        <member name="M:LUMO.Core.Helpers.JsonHelper.StringifyAsync(System.Object)">
+            <summary>
+            Object to json.
+            </summary>
+            <param name="value"></param>
+            <returns>Json string</returns>
+        </member>
+        <member name="T:LUMO.Core.Patterns.Creational.IPrototype`1">
+            <summary>
+            Prototype Pattern Interface.
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:LUMO.Core.Patterns.Creational.IPrototype`1.Clone">
+            <summary>
+            Get clone of itself.
+            </summary>
+            <returns>Clone of itself</returns>
+        </member>
+        <member name="T:LUMO.Core.Patterns.Creational.ISingleton`1">
+            <summary>
+            Singleton Pattern Interface.
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="T:LUMO.Core.Patterns.Creational.Prototype`1">
+            <summary>
+            Prototype Pattern Abstract.
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:LUMO.Core.Patterns.Creational.Prototype`1.Clone">
+            <summary>
+            Get clone of itself.
+            </summary>
+            <returns>Clone of itself</returns>
+        </member>
+        <member name="T:LUMO.Core.Patterns.Creational.Singleton`1">
+            <summary>
+            Singleton Pattern Abstract.
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="P:LUMO.Core.Patterns.Creational.Singleton`1.Instance">
+            <summary>
+            Get Instance of T object.
+            </summary>
+        </member>
+    </members>
+</doc>
