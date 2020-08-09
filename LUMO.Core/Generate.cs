@@ -7,12 +7,9 @@ namespace LUMO.Core
     /// <summary>
     /// Generates random things... (int, string, etc.) 
     /// </summary>
-    public class Generate
+    public static class Generate
     {
-        /// <summary>
-        /// 
-        /// </summary>
-        public static Random random = new Random();
+        private static Random random = new Random();
 
         /// <summary>
         /// Get random int.

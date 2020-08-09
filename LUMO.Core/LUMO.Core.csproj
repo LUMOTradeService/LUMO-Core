@@ -3,7 +3,7 @@
 	<PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <SignAssembly>false</SignAssembly>
-    <Version>0.0.1.6</Version>
+    <Version>0.0.1.7</Version>
     <RepositoryUrl>https://github.com/LUMOTradeService/LUMO-Core</RepositoryUrl>
     <Company>LUMO Trade Service s.r.o.</Company>
     <Authors>Lukáš Moravec</Authors>
@@ -14,8 +14,8 @@
     <PackageProjectUrl>https://github.com/LUMOTradeService/LUMO-Core</PackageProjectUrl>
     <PackageLicenseFile></PackageLicenseFile>
     <PackageId>LUMO.Core</PackageId>
-    <AssemblyVersion>0.0.1.6</AssemblyVersion>
-    <FileVersion>0.0.1.6</FileVersion>
+    <AssemblyVersion>0.0.1.7</AssemblyVersion>
+    <FileVersion>0.0.1.7</FileVersion>
     <ApplicationIcon>LUMOlogo.ico</ApplicationIcon>
     <PackageIcon>LUMO1688x1688.png</PackageIcon>
     <NeutralLanguage>en</NeutralLanguage>

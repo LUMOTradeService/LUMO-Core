@@ -7,7 +7,7 @@ namespace LUMO.Core
     /// <summary>
     /// Realy, realy, realy simple calculator
     /// </summary>
-    public class Calculator
+    public static class Calculator
     {
         /// <summary>
         /// Add two numbers.
