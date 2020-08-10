@@ -20,6 +20,10 @@ namespace LUMO.Core
         /// </summary>
         public string CurrentDirectory { get; set; }
         /// <summary>
+        /// Backup directory
+        /// </summary>
+        public string BackupDirectory { get; set; }
+        /// <summary>
         /// 
         /// </summary>
         public string[] Files
@@ -47,7 +51,7 @@ namespace LUMO.Core
         }
 
         /// <summary>
-        /// 
+        /// Save file with contents in CurrentDirectory.
         /// </summary>
         /// <param name="fileName"></param>
         /// <param name="contents"></param>
@@ -56,7 +60,7 @@ namespace LUMO.Core
             Save(CurrentDirectory, fileName, contents);
         }
         /// <summary>
-        /// 
+        /// Load file with requested fileName from CurrentDirectory.
         /// </summary>
         /// <param name="fileName"></param>
         /// <returns></returns>
@@ -65,7 +69,7 @@ namespace LUMO.Core
             return Load(CurrentDirectory, fileName);
         }
         /// <summary>
-        /// 
+        /// Delete file from CurrentDirecotry.
         /// </summary>
         /// <param name="fileName"></param>
         public void Delete(string fileName)
@@ -73,7 +77,7 @@ namespace LUMO.Core
             Delete(CurrentDirectory, fileName);
         }
         /// <summary>
-        /// 
+        /// Encrypt file located in CurrentDirectory.
         /// </summary>
         /// <param name="fileName"></param>
         public void Encrypt(string fileName)
@@ -81,7 +85,7 @@ namespace LUMO.Core
             Encrypt(fileName);
         }
         /// <summary>
-        /// 
+        /// Decrypt file located in CurrentDirectory.
         /// </summary>
         /// <param name="fileName"></param>
         public void Decrypt(string fileName)
