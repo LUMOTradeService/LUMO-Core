@@ -20,7 +20,7 @@ namespace LUMO.Core.Formatters
             switch (value)
             {
                 case null: throw new ArgumentNullException(nameof(value));
-                case "": throw new ArgumentException($"{nameof(value)} cannot be empty", nameof(value));
+                case "": throw new ArgumentException("Value cannot be empty.", nameof(value));
                 default: return value.First().ToString().ToUpper() + value.Substring(1);
             }
         }

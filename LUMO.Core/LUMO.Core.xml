@@ -53,6 +53,11 @@
             Current directory
             </summary>
         </member>
+        <member name="P:LUMO.Core.FileManager.BackupDirectory">
+            <summary>
+            Backup directory
+            </summary>
+        </member>
         <member name="P:LUMO.Core.FileManager.Files">
             <summary>
             
@@ -71,33 +76,33 @@
         </member>
         <member name="M:LUMO.Core.FileManager.Save(System.String,System.String)">
             <summary>
-            
+            Save file with contents in CurrentDirectory.
             </summary>
             <param name="fileName"></param>
             <param name="contents"></param>
         </member>
         <member name="M:LUMO.Core.FileManager.Load(System.String)">
             <summary>
-            
+            Load file with requested fileName from CurrentDirectory.
             </summary>
             <param name="fileName"></param>
             <returns></returns>
         </member>
         <member name="M:LUMO.Core.FileManager.Delete(System.String)">
             <summary>
-            
+            Delete file from CurrentDirecotry.
             </summary>
             <param name="fileName"></param>
         </member>
         <member name="M:LUMO.Core.FileManager.Encrypt(System.String)">
             <summary>
-            
+            Encrypt file located in CurrentDirectory.
             </summary>
             <param name="fileName"></param>
         </member>
         <member name="M:LUMO.Core.FileManager.Decrypt(System.String)">
             <summary>
-            
+            Decrypt file located in CurrentDirectory.
             </summary>
             <param name="fileName"></param>
         </member>
@@ -268,26 +273,6 @@
             </summary>
             <param name="multiplier"></param>
             <returns>Double between 0.0 to 1.0 (multiplier)</returns>
-        </member>
-        <member name="T:LUMO.Core.Helpers.JsonHelper">
-            <summary>
-            Serialize/Deserialize 
-            </summary>
-        </member>
-        <member name="M:LUMO.Core.Helpers.JsonHelper.ToObjectAsync``1(System.String)">
-            <summary>
-            Json to object.
-            </summary>
-            <typeparam name="T"></typeparam>
-            <param name="value"></param>
-            <returns>Object</returns>
-        </member>
-        <member name="M:LUMO.Core.Helpers.JsonHelper.StringifyAsync(System.Object)">
-            <summary>
-            Object to json.
-            </summary>
-            <param name="value"></param>
-            <returns>Json string</returns>
         </member>
         <member name="T:LUMO.Core.Patterns.Creational.IPrototype`1">
             <summary>
