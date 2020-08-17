@@ -4,7 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 
-namespace LUMO.Core
+namespace LUMO.Core.Clock
 {
     /// <summary>
     /// At this moment it just has static methods.
@@ -247,6 +247,6 @@ namespace LUMO.Core
             return files.ToArray();
         }
 
-        #endregion
+#endregion
     }
 }

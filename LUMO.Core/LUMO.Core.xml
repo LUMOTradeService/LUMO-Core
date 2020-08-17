@@ -41,72 +41,92 @@
             <param name="b"></param>
             <returns>Result</returns>
         </member>
-        <member name="T:LUMO.Core.FileManager">
+        <member name="T:LUMO.Core.Clock.ClockFactory">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:LUMO.Core.Clock.ClockFactory.ClockBasic(System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="isTicking"></param>
+            <returns></returns>
+        </member>
+        <member name="M:LUMO.Core.Clock.ClockFactory.ClockWithMiliseconds(System.Int32,System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="interval"></param>
+            <param name="isTicking"></param>
+            <returns></returns>
+        </member>
+        <member name="T:LUMO.Core.Clock.FileManager">
             <summary>
             At this moment it just has static methods.
             But some day... 
             TO DO: Documentation
             </summary>
         </member>
-        <member name="P:LUMO.Core.FileManager.CurrentDirectory">
+        <member name="P:LUMO.Core.Clock.FileManager.CurrentDirectory">
             <summary>
             Current directory
             </summary>
         </member>
-        <member name="P:LUMO.Core.FileManager.BackupDirectory">
+        <member name="P:LUMO.Core.Clock.FileManager.BackupDirectory">
             <summary>
             Backup directory
             </summary>
         </member>
-        <member name="P:LUMO.Core.FileManager.Files">
+        <member name="P:LUMO.Core.Clock.FileManager.Files">
             <summary>
             
             </summary>
         </member>
-        <member name="M:LUMO.Core.FileManager.#ctor">
+        <member name="M:LUMO.Core.Clock.FileManager.#ctor">
             <summary>
             
             </summary>
         </member>
-        <member name="M:LUMO.Core.FileManager.#ctor(System.String)">
+        <member name="M:LUMO.Core.Clock.FileManager.#ctor(System.String)">
             <summary>
             
             </summary>
             <param name="directory"></param>
         </member>
-        <member name="M:LUMO.Core.FileManager.Save(System.String,System.String)">
+        <member name="M:LUMO.Core.Clock.FileManager.Save(System.String,System.String)">
             <summary>
             Save file with contents in CurrentDirectory.
             </summary>
             <param name="fileName"></param>
             <param name="contents"></param>
         </member>
-        <member name="M:LUMO.Core.FileManager.Load(System.String)">
+        <member name="M:LUMO.Core.Clock.FileManager.Load(System.String)">
             <summary>
             Load file with requested fileName from CurrentDirectory.
             </summary>
             <param name="fileName"></param>
             <returns></returns>
         </member>
-        <member name="M:LUMO.Core.FileManager.Delete(System.String)">
+        <member name="M:LUMO.Core.Clock.FileManager.Delete(System.String)">
             <summary>
             Delete file from CurrentDirecotry.
             </summary>
             <param name="fileName"></param>
         </member>
-        <member name="M:LUMO.Core.FileManager.Encrypt(System.String)">
+        <member name="M:LUMO.Core.Clock.FileManager.Encrypt(System.String)">
             <summary>
             Encrypt file located in CurrentDirectory.
             </summary>
             <param name="fileName"></param>
         </member>
-        <member name="M:LUMO.Core.FileManager.Decrypt(System.String)">
+        <member name="M:LUMO.Core.Clock.FileManager.Decrypt(System.String)">
             <summary>
             Decrypt file located in CurrentDirectory.
             </summary>
             <param name="fileName"></param>
         </member>
-        <member name="M:LUMO.Core.FileManager.Save(System.String,System.String,System.String)">
+        <member name="M:LUMO.Core.Clock.FileManager.Save(System.String,System.String,System.String)">
             <summary>
             
             </summary>
@@ -114,7 +134,7 @@
             <param name="fileName"></param>
             <param name="contents"></param>
         </member>
-        <member name="M:LUMO.Core.FileManager.Save(System.String,System.String,System.String,System.Text.Encoding)">
+        <member name="M:LUMO.Core.Clock.FileManager.Save(System.String,System.String,System.String,System.Text.Encoding)">
             <summary>
             
             </summary>
@@ -123,7 +143,7 @@
             <param name="contents"></param>
             <param name="encoding"></param>
         </member>
-        <member name="M:LUMO.Core.FileManager.Load(System.String,System.String)">
+        <member name="M:LUMO.Core.Clock.FileManager.Load(System.String,System.String)">
             <summary>
             
             </summary>
@@ -131,7 +151,7 @@
             <param name="fileName"></param>
             <returns></returns>
         </member>
-        <member name="M:LUMO.Core.FileManager.Load(System.String,System.String,System.Text.Encoding)">
+        <member name="M:LUMO.Core.Clock.FileManager.Load(System.String,System.String,System.Text.Encoding)">
             <summary>
             
             </summary>
@@ -140,14 +160,14 @@
             <param name="encoding"></param>
             <returns></returns>
         </member>
-        <member name="M:LUMO.Core.FileManager.Delete(System.String,System.String)">
+        <member name="M:LUMO.Core.Clock.FileManager.Delete(System.String,System.String)">
             <summary>
             
             </summary>
             <param name="directory"></param>
             <param name="fileName"></param>
         </member>
-        <member name="M:LUMO.Core.FileManager.Copy(System.String,System.String,System.String,System.String)">
+        <member name="M:LUMO.Core.Clock.FileManager.Copy(System.String,System.String,System.String,System.String)">
             <summary>
             
             </summary>
@@ -156,7 +176,7 @@
             <param name="destDirectory"></param>
             <param name="destFileName"></param>
         </member>
-        <member name="M:LUMO.Core.FileManager.Move(System.String,System.String,System.String,System.String)">
+        <member name="M:LUMO.Core.Clock.FileManager.Move(System.String,System.String,System.String,System.String)">
             <summary>
             
             </summary>
@@ -165,7 +185,7 @@
             <param name="destDirectory"></param>
             <param name="destFileName"></param>
         </member>
-        <member name="M:LUMO.Core.FileManager.Replace(System.String,System.String,System.String,System.String,System.String,System.String)">
+        <member name="M:LUMO.Core.Clock.FileManager.Replace(System.String,System.String,System.String,System.String,System.String,System.String)">
             <summary>
             
             </summary>
@@ -176,35 +196,35 @@
             <param name="backupDirectory"></param>
             <param name="backupFileName"></param>
         </member>
-        <member name="M:LUMO.Core.FileManager.Encrypt(System.String,System.String)">
+        <member name="M:LUMO.Core.Clock.FileManager.Encrypt(System.String,System.String)">
             <summary>
             
             </summary>
             <param name="directory"></param>
             <param name="fileName"></param>
         </member>
-        <member name="M:LUMO.Core.FileManager.Decrypt(System.String,System.String)">
+        <member name="M:LUMO.Core.Clock.FileManager.Decrypt(System.String,System.String)">
             <summary>
             
             </summary>
             <param name="directory"></param>
             <param name="fileName"></param>
         </member>
-        <member name="M:LUMO.Core.FileManager.GetFirstFile(System.String)">
+        <member name="M:LUMO.Core.Clock.FileManager.GetFirstFile(System.String)">
             <summary>
             
             </summary>
             <param name="directory"></param>
             <returns></returns>
         </member>
-        <member name="M:LUMO.Core.FileManager.GetFiles(System.String)">
+        <member name="M:LUMO.Core.Clock.FileManager.GetFiles(System.String)">
             <summary>
             Get all files in folder.
             </summary>
             <param name="directory">folder path.</param>
             <returns>List of files.</returns>
         </member>
-        <member name="M:LUMO.Core.FileManager.GetFiles(System.String,System.String[],System.Boolean)">
+        <member name="M:LUMO.Core.Clock.FileManager.GetFiles(System.String,System.String[],System.Boolean)">
             <summary>
             Get all files in folder that ends with suffix.
             </summary>
@@ -213,7 +233,7 @@
             <param name="isRecursive"></param>
             <returns>List of filtered files.</returns>
         </member>
-        <member name="M:LUMO.Core.FileManager.GetFiles(System.String,System.String,System.String[],System.Boolean)">
+        <member name="M:LUMO.Core.Clock.FileManager.GetFiles(System.String,System.String,System.String[],System.Boolean)">
             <summary>
             Get All Files in Folder that begins with [fileNameBegin] string.
             </summary>
@@ -222,6 +242,83 @@
             <param name="filters">(Examples: exe, dll, png, etx...)</param>
             <param name="isRecursive"></param>
             <returns>List of filtered files.</returns>
+        </member>
+        <member name="T:LUMO.Core.ClockManager">
+            <summary>
+            Not so precise clock :D.
+            </summary>
+        </member>
+        <member name="P:LUMO.Core.ClockManager.Time">
+            <summary>
+            Get current time.
+            </summary>
+        </member>
+        <member name="P:LUMO.Core.ClockManager.TimeElapsed">
+            <summary>
+            Get elapsed time.
+            </summary>
+        </member>
+        <member name="P:LUMO.Core.ClockManager.TimeFormat">
+            <summary>
+            Get or set time format
+            </summary>
+        </member>
+        <member name="P:LUMO.Core.ClockManager.Interval">
+            <summary>
+            Get or set update time interval.
+            </summary>
+        </member>
+        <member name="P:LUMO.Core.ClockManager.IsTicking">
+            <summary>
+            Start or stop clock.
+            </summary>
+        </member>
+        <member name="M:LUMO.Core.ClockManager.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:LUMO.Core.ClockManager.#ctor(System.Runtime.Serialization.DateTimeFormat,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="timeFormat"></param>
+            <param name="interval"></param>
+        </member>
+        <member name="M:LUMO.Core.ClockManager.#ctor(System.Runtime.Serialization.DateTimeFormat,System.Int32,System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="timeFormat"></param>
+            <param name="interval"></param>
+            <param name="isRunning"></param>
+        </member>
+        <member name="E:LUMO.Core.ClockManager.OnIntervalElapsed">
+            <summary>
+            Raised when interval elapsed.
+            </summary>
+        </member>
+        <member name="E:LUMO.Core.ClockManager.OnTickingStateChanged">
+            <summary>
+            Event raised when IsTicking state changed.
+            </summary>
+        </member>
+        <member name="T:LUMO.Core.Delegates.TestCallbacks">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:LUMO.Core.Delegates.IntervalElapsedHandler">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+        </member>
+        <member name="T:LUMO.Core.Delegates.TickingStateChangedHandler">
+            <summary>
+            
+            </summary>
+            <param name="state"></param>
         </member>
         <member name="T:LUMO.Core.Formatters.StringFormatter">
             <summary>
@@ -234,6 +331,13 @@
             </summary>
             <param name="value"></param>
             <returns>String with first character in uppercase</returns>
+        </member>
+        <member name="M:LUMO.Core.Formatters.StringFormatter.FirstCharInSentenceUpper(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
         </member>
         <member name="T:LUMO.Core.Generate">
             <summary>

@@ -24,7 +24,11 @@ namespace LUMO.Core.Formatters
                 default: return value.First().ToString().ToUpper() + value.Substring(1);
             }
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="value"></param>
+        /// <returns></returns>
         public static string FirstCharInSentenceUpper(string value)
         {
             throw new NotImplementedException();

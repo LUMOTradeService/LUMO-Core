@@ -3,23 +3,23 @@
 	<PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <SignAssembly>false</SignAssembly>
-    <Version>0.0.1.8</Version>
+    <Version>1.0.0.0-preview.1.0.1</Version>
     <RepositoryUrl>https://github.com/LUMOTradeService/LUMO-Core</RepositoryUrl>
     <Company>LUMO Trade Service s.r.o.</Company>
     <Authors>Lukáš Moravec</Authors>
     <Product>LUMO Core</Product>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <PackageProjectUrl>https://github.com/LUMOTradeService/LUMO-Core</PackageProjectUrl>
     <PackageLicenseFile></PackageLicenseFile>
     <PackageId>LUMO.Core</PackageId>
-    <AssemblyVersion>0.0.1.8</AssemblyVersion>
-    <FileVersion>0.0.1.8</FileVersion>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <FileVersion>1.0.0.0</FileVersion>
     <ApplicationIcon>LUMOlogo.ico</ApplicationIcon>
     <PackageIcon>LUMO1688x1688.png</PackageIcon>
     <NeutralLanguage>en</NeutralLanguage>
-    <Description>LUMO Core, including FileManager, Abstract classes, Helpers, Formatters and Adapters.
+    <Description>LUMO Core, including FileManager, ClockManager, Abstract classes, Helpers, Formatters and Adapters.
 
 Not worth downloading yet, library is almost empty at this moment.</Description>
   </PropertyGroup>
@@ -46,8 +46,8 @@ Not worth downloading yet, library is almost empty at this moment.</Description>
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="LUMO.Data" Version="1.0.0.1" />
-    <PackageReference Include="LUMO.Model" Version="1.0.0.1" />
+    <PackageReference Include="LUMO.Data" Version="1.0.0-preview1-11" />
+    <PackageReference Include="LUMO.Model" Version="1.0.0-preview1-11" />
   </ItemGroup>
 
 </Project>

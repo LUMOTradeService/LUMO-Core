@@ -5,7 +5,13 @@ VisualStudioVersion = 16.0.30320.27
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LUMO.Core", "LUMO.Core\LUMO.Core.csproj", "{A5851AC7-2834-4193-BC3C-B31A6C264D9E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LUMO.Core.Tests", "LUMO.Core.Tests\LUMO.Core.Tests.csproj", "{F24D10E7-B732-421D-949D-417A25DAE085}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LUMO.Core.Tests", "LUMO.Core.Tests\LUMO.Core.Tests.csproj", "{F24D10E7-B732-421D-949D-417A25DAE085}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LUMO.Core.CLI", "LUMO.Core.CLI\LUMO.Core.CLI.csproj", "{3822FF34-060D-4DCF-870A-48B8615C23EF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LUMO.Data", "..\LUMO-Data\LUMO.Data\LUMO.Data.csproj", "{03A27F44-AC98-44C3-B344-78473E2D9522}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LUMO.Model", "..\LUMO-Model\LUMO.Model\LUMO.Model.csproj", "{2423B02F-434D-4E19-8E3E-8EB5F35F7EF8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +27,18 @@ Global
 		{F24D10E7-B732-421D-949D-417A25DAE085}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F24D10E7-B732-421D-949D-417A25DAE085}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F24D10E7-B732-421D-949D-417A25DAE085}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3822FF34-060D-4DCF-870A-48B8615C23EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3822FF34-060D-4DCF-870A-48B8615C23EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3822FF34-060D-4DCF-870A-48B8615C23EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3822FF34-060D-4DCF-870A-48B8615C23EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03A27F44-AC98-44C3-B344-78473E2D9522}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03A27F44-AC98-44C3-B344-78473E2D9522}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03A27F44-AC98-44C3-B344-78473E2D9522}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03A27F44-AC98-44C3-B344-78473E2D9522}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2423B02F-434D-4E19-8E3E-8EB5F35F7EF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2423B02F-434D-4E19-8E3E-8EB5F35F7EF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2423B02F-434D-4E19-8E3E-8EB5F35F7EF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2423B02F-434D-4E19-8E3E-8EB5F35F7EF8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
