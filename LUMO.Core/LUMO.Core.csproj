@@ -46,8 +46,8 @@ Not worth downloading yet, library is almost empty at this moment.</Description>
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="LUMO.Data" Version="1.0.0-preview1-11" />
-    <PackageReference Include="LUMO.Model" Version="1.0.0-preview1-11" />
+    <ProjectReference Include="..\..\LUMO-Data\LUMO.Data\LUMO.Data.csproj" />
+    <ProjectReference Include="..\..\LUMO-Model\LUMO.Model\LUMO.Model.csproj" />
   </ItemGroup>
 
 </Project>

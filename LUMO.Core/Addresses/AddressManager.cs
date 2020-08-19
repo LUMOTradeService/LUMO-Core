@@ -1,4 +1,5 @@
 ﻿using LUMO.Addresses;
+using LUMO.Data.Addresses;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -7,7 +8,7 @@ namespace LUMO.Core.Addresses
 {
     public class AddressManager
     {
-        private AddressManager()
+        private AddressManager(IAddressStore addressStore)
         {
 
         }
